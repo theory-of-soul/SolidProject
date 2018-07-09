@@ -1,0 +1,7 @@
+mixin dealing-card(imageName, title, text)
+	div.dealing-card
+		img(src="/company/#{imageName}.png")
+		p.dealing-card__title
+			| #{title}
+		p.dealing-card__text(style='white-space:pre;')
+			| #{text}

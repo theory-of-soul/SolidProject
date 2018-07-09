@@ -1,0 +1,33 @@
+.form.form-q#formQuestion
+    div.header
+        .container
+            .header__icon
+                img(src="/images/icons/logo.svg" alt="Solid Project")
+
+            .close
+                img.closeForm(src="/images/icons/closeForm.svg" alt="Закрыть")
+
+    form#form-q.form__wrapper(name="form-buy" data-form="q")
+        p.form__title.form__title--q Заполните, пожалуйста, форму
+        .input-field
+            input(name="fio" id="fio-q" required="required" type="text")
+            label(for="fio-q") ФИО
+        .input-field
+            input(name="phone" id="phone-q" required="required" type="tel")
+            label(for="phone-q") Телефон
+        .input-field
+            input(name="email" id="email-q" required="required" type="email")
+            label(for="email-q") Эл. почта
+        .input-field
+            input(name="city" id="city-q" type="text")
+            label(for="city-q") Город
+        .input-field
+            textarea(name="question" id="question-q" rows="4" placeholder="Вопрос или комментарий")
+        .checkbox
+            input(name="agree" id="agree-q" required="required" type="checkbox" checked="true")
+            label(for="agree-q")
+                | Отправляя форму, Вы соглашаетесь на обработку персональных данных
+        div
+            input.btn(type="submit" value="Отправить")
+            p.sent Ваш вопрос отправлен
+

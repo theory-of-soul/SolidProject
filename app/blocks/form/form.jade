@@ -1,0 +1,32 @@
+.form#buy
+    div.header
+        .container
+            .header__icon
+                img(src="/images/icons/logo.svg" alt="Solid Project")
+
+            .close
+                img.closeForm(src="/images/icons/closeForm.svg" alt="Закрыть")
+
+    form#form-b.form__wrapper(name="form-buy" data-form="b")
+        p.form__title Заявка на покупку
+        .input-field
+            input(name="fio" id="fio" required="required" type="text")
+            label(for="fio") ФИО
+        .input-field
+            input(name="phone" id="phone" required="required" type="tel")
+            label(for="phone") Телефон
+        .input-field
+            input(name="email" id="email" required="required" type="email")
+            label(for="email") Эл. почта
+        .input-field
+            input(name="city" id="city" type="text")
+            label(for="city") Город
+        .input-field
+            textarea(name="question" id="question" rows="4" placeholder="Вопрос или комментарий")
+        .checkbox
+            input(name="agree" id="agree" required="required" type="checkbox" checked="true")
+            label(for="agree")
+                | Отправляя заявку, Вы соглашаетесь на обработку персональных данных
+        div
+            input.btn(type="submit" value="Отправить заявку")
+            p.sent Ваша заявка отправлена

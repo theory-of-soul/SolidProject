@@ -1,0 +1,45 @@
+.about#emitent
+    .container
+        .about__tabs
+            a(href="#about").tabs.container.tabs--active
+                | об Эмитенте
+                i.arrow
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='arrow' fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.58L1.41 0L0 1.41L6 7.41L12 1.41L10.59 0Z" transform="translate(0 0.589966)" fill="white"/>
+                    </svg>
+            div#about.tabs-info
+                include ./about-emitent/about-emitent
+
+
+            a(href="#stats").tabs.container
+                | Основные показатели
+                i.arrow
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='arrow' fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.58L1.41 0L0 1.41L6 7.41L12 1.41L10.59 0Z" transform="translate(0 0.589966)" fill="white"/>
+                    </svg>
+            div#stats.tabs-info.hide
+                include ./about-indicators/about-indicators
+
+            a(href="#results").tabs.container
+                | Капитал и портфели
+                i.arrow
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='arrow' fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.58L1.41 0L0 1.41L6 7.41L12 1.41L10.59 0Z" transform="translate(0 0.589966)" fill="white"/>
+                    </svg>
+
+            div#results.tabs-info.hide
+                include ./about-results/about-results
+
+            a(href="#cases").tabs.container
+                | Риск менеджмент
+                i.arrow
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='arrow' fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.58L1.41 0L0 1.41L6 7.41L12 1.41L10.59 0Z" transform="translate(0 0.589966)" fill="white"/>
+                    </svg>
+            div#cases.tabs-info.hide
+                include ./about-risks/about-risks
+
+        p.about__link
+            | Раскрытие информации:
+            a(href='http://www.solid-leasing.ru/')
+                | http://www.solid-leasing.ru/

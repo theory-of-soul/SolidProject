@@ -1,0 +1,90 @@
+.about
+	display block
+	padding-top 40px
+	padding-bottom 40px
+	background-color #660035
+	background-image url('/images/background/Vector.svg')
+	background-size: 100%;
+	background-position: 0 40%;
+	.container
+		padding 0
+	&__link
+		color white
+		text-align center
+		width 100%
+		font-size 14px
+		line-height 16px
+		max-width: 227px;
+		margin: 40px auto 0;
+		display: block;
+		a
+			color: #fff
+	&__tabs
+		.tabs-info
+			height auto
+			overflow hidden
+		.tabs-info.hide
+			display block!important
+			height 0
+		.tabs
+			width 100%
+			background-color rgba(0, 0, 0, 0.2)
+			color: #fff
+			display inline-block
+			text-transform uppercase
+			text-decoration none
+			font-size 14px
+			line-height 16px
+			letter-spacing 5%
+			padding: 20px;
+			margin-bottom 2px
+			&:hover
+				background-color rgba(0, 0, 0, 0.4)
+			&--active
+				background-color white
+				color #660035
+				&:hover
+					background-color white
+				i
+					transform rotate(180deg)
+					#arrow
+						fill #222
+			i
+				float right
+		div
+			background-color white
+
+	@media (min-width: 768px)
+		padding-bottom 100px
+		padding-top 100px
+		background-size: 100%;
+		background-position: 3px -139px;
+		background-repeat: no-repeat;
+		.container
+			padding-right: 6.52%;
+			padding-left: 6.52%;
+		&__link
+			max-width: 100%;
+			text-align left
+
+	@media (min-width: 1200px)
+		.container
+			padding 0
+		&__tabs
+			display flex
+			flex-wrap wrap
+			.arrow
+				display none
+			.tabs
+				flex 1 1 25%
+				order 0
+				padding: 32px 0;
+				text-align: center;
+				margin-bottom 0
+			.tabs-info
+				flex 1 1 100%
+				order 1
+
+
+
+

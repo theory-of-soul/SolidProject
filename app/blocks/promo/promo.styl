@@ -1,0 +1,98 @@
+.promo
+  display block
+  color #fff
+  padding-top 40px
+  min-height 702px
+  background linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/images/background/promo.jpeg'), #444
+  padding-bottom: 86px;
+  background-repeat: no-repeat;
+  background-size: 287%;
+  background-position: 54% 70%;
+  &__title
+    margin-top 80px
+    font-family: MetaPro
+    &--small
+      font-size: 18px
+      line-height 21px
+    &--big
+      font-size: 30px;
+      line-height: 35px
+      margin-top 7px
+  &__percents
+    display flex
+    margin-top 53px
+    margin-bottom 41px
+  &__percent
+    flex: 1;
+    p:first-child
+      font-size 48px
+      line-height 56px
+      margin-bottom 30px
+      font-family: MetaPro
+    p:last-child
+      font-size 14px
+      line-height 16px
+  @media (min-width 768px)
+    padding-top 120px
+    background-size: 163%;
+    background-position: -224px 120px;
+    &__title
+      margin-top: 56px;
+      &--small
+        font-size: 24px
+        line-height 28px
+      &--big
+        font-size: 64px;
+        line-height: 75px
+        margin-top 2px
+    &__percents
+      margin-top 40px
+      margin-bottom 50px
+    &__percent
+      p:first-child
+        font-size 64px
+        line-height 75px
+        margin-bottom 10px
+      p:last-child
+        font-size 18px
+        line-height 21px
+  @media (min-width 1200px)
+    padding-top 240px
+    background-size: 120%;
+    background-position: 0px -20px;
+    .container
+      display: flex;
+      justify-content: space-between;
+    &__title
+      margin-top: 0
+
+
+.rate
+  border 4px solid #fff
+  padding 20px
+  background-image: url(/images/icons/invest.svg);
+  background-position: 91% 85%;
+  background-repeat: no-repeat;
+  &__title
+    font-size 24px
+    line-height 28px
+    margin-bottom 88px
+    max-width: 250px;
+    font-family: MetaPro
+  &__describe
+    max-width 177px
+    font-size 11px
+    line-height 13px
+  @media (min-width 768px)
+    padding 50px
+    &__title
+      font-size 36px
+      line-height 42px
+      margin-bottom 49px
+      max-width: 391px;
+    &__describe
+      max-width 282px
+      font-size 12px
+      line-height 14px
+
+

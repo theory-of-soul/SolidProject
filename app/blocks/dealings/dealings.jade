@@ -1,0 +1,259 @@
+include ../dealing-card/dealing-card
+
+// количество карточек по полам в большую сторону на размер карточки
+- var width2017 = (9 * 310) + "px";
+- var width2018 = (4 * 310) + "px";
+.dealings
+    .container
+        h3.dealings__title
+            | Реализованные сделки
+        .dealings__date
+            a(href="#dealing-cards2018").tabs.tabs--active 2018
+            a(href="#dealing-cards2017").tabs 2017
+        div
+            #dealing-cards2018.tabs-info
+                .dealings__cards-wrapper(data-mcs-theme="light-3")
+                    div.dealings__cards
+                        div.dealing-card
+                            img(src="/images/company/solid-leasing.png")
+                            p.dealing-card__title
+                                | Солид-Лизинг
+                            p.dealing-card__text
+                                | Выпуск облигаций КО_СЛ-006
+                                br
+                                | 30 млн руб., купон 12%
+                                br
+                                | Организатор, Андеррайтер
+                        div.dealing-card
+                            img(src="/images/company/solid-leasing.png")
+                            p.dealing-card__title
+                                | Солид-Лизинг
+                            p.dealing-card__text
+                                | Выпуск облигаций КО_СЛ-006
+                                br
+                                | 36 млн руб., купон 12%
+                                br
+                                | Организатор, Андеррайтер
+                        div.dealing-card
+                            img(src="/images/company/carmoney.png")
+                            p.dealing-card__title
+                                | Столичный залоговый дом
+                            p.dealing-card__text
+                                | Выпуск облигаций БО-001-02
+                                br
+                                | 300 млн руб., купон 16%
+                                br
+                                | Организатор, Андеррайтер
+                        div.dealing-card(style="margin-right: 0")
+                            img(src="/images/company/npk.png")
+                            p.dealing-card__title
+                                | НПК
+                            p.dealing-card__text
+                                | Выпуск облигаций ПБО-01
+                                br
+                                | 5 млрд руб., купон 7,25%
+                                br
+                                | Со-организатор, Андеррайтер
+                        div.dealing-card
+                            img(src="/images/company/gtlk.png")
+                            p.dealing-card__title
+                                | ГТЛК
+                            p.dealing-card__text
+                                | Выпуск облигаций 001P-09
+                                br
+                                | 10 млрд руб., купон 7,35%
+                                br
+                                | Со-организатор, Андеррайтер
+                        div.dealing-card
+                            img(src="/images/company/levenhuk.png")
+                            p.dealing-card__title
+                                | Левенгук
+                            p.dealing-card__text
+                                | Выпуск облигаций БО-01
+                                br
+                                | 100 млн руб., купон 17%
+                                br
+                                | Со-организатор, Андеррайтер
+                        div.dealing-card
+                            img(src="/images/company/metallinvest.png")
+                            p.dealing-card__title
+                                | Ипотечный агент Металлинвест-2
+                            p.dealing-card__text
+                                | класс А
+                                br
+                                | 2,35 млрд руб., купон 7,80%
+                                br
+                                | Со-организатор, Андеррайтер
+            #dealing-cards2017.tabs-info.hide
+                .dealings__cards-wrapper(data-mcs-theme="light-3")
+                    div.dealings__cards(style="width: #{width2017}")
+                    div.dealing-card
+                        img(src="/images/company/binbank.png")
+                        p.dealing-card__title
+                            | БИНБАНК
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-П03
+                            br
+                            | 3 млрд руб., купон 12,15%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/binbank.png")
+                        p.dealing-card__title
+                            | БИНБАНК
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-П04
+                            br
+                            | 3 млрд руб., 11,15%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/binbank.png")
+                        p.dealing-card__title
+                            | БИНБАНК
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-П05
+                            br
+                            | 3 млрд руб., 11,15%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/kalashnikov.png")
+                        p.dealing-card__title
+                            | Концерн Калашников
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-П01
+                            br
+                            | 3 млрд руб., 10,9%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/sovcombank.png")
+                        p.dealing-card__title
+                            | Совкомбанк
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-05
+                            br
+                            | 10 млрд руб., купон 8,9%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/orenburg.png")
+                        p.dealing-card__title
+                            | Оренбургская область
+                        p.dealing-card__text
+                            | 35004
+                            br
+                            | 4 млрд руб., купон 8,18%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/gtlk.png")
+                        p.dealing-card__title
+                            | ГТЛК
+                        p.dealing-card__text
+                            | Выпуск облигаций 001P-03
+                            br
+                            | 10 млрд руб., купон 11%
+                            br
+                            | Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/gtlk.png")
+                        p.dealing-card__title
+                            | ГТЛК
+                        p.dealing-card__text
+                            | Выпуск облигаций 001P-04
+                            br
+                            | 10 млрд руб., 9,85%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        p.dealing-card__title
+                            | ТКХ
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-П01
+                            br
+                            | 7 млрд руб., купон 9%
+                            br
+                            | Со-организатор, Андеррайтер
+
+                    div.dealing-card
+                        img(src="/images/company/carmoney.png")
+                        p.dealing-card__title
+                            | СТОЛИЧНЫЙ ЗАЛОГОВЫЙ ДОМ
+                        p.dealing-card__text
+                            | Выпуск облигаций БО-001-01
+                            br
+                            | 300 млн руб., купон 17%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/solid-leasing.png")
+                        p.dealing-card__title
+                            | Солид-Лизинг
+                        p.dealing-card__text
+                            | Выпуск облигаций КО_СЛ-001
+                            br
+                            | 20 млн руб., купон 12%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/solid-leasing.png")
+                        p.dealing-card__title
+                            | Солид-Лизинг
+                        p.dealing-card__text
+                            | Выпуск облигаций КО_СЛ-002
+                            br
+                            | 30 млн руб., купон 12%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/solid-leasing.png")
+                        p.dealing-card__title
+                            | Солид-Лизинг
+                        p.dealing-card__text
+                            | Выпуск облигаций КО_СЛ-003
+                            br
+                            | 49,9 млн руб., купон 12%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/solid-leasing.png")
+                        p.dealing-card__title
+                            | Солид-Лизинг
+                        p.dealing-card__text
+                            | Выпуск облигаций КО_СЛ-004
+                            br
+                            | 45 млн руб., купон 12%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/vbank.png")
+                        p.dealing-card__title
+                            | Ипотечный агент Возрождение 5
+                        p.dealing-card__text
+                            | класс А
+                            br
+                            | 3,25 млрд руб., купон 9,25%
+                            br
+                            | Со-организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/solid-leasing.png")
+                        p.dealing-card__title
+                            | Солид-Лизинг
+                        p.dealing-card__text
+                            | Выпуск облигаций КО_СЛ-005
+                            br
+                            | 55 млн руб., купон 10,5%
+                            br
+                            | Организатор, Андеррайтер
+                    div.dealing-card
+                        img(src="/images/company/lenspecsmu.png")
+                        p.dealing-card__title
+                            | Эталон ЛенСпецСМУ
+                        p.dealing-card__text
+                            | Выпуск облигаций 001P-02
+                            br
+                            | 5 млрд руб., купон 8,95%
+                            br
+                            | Со-организатор, Андеррайтер

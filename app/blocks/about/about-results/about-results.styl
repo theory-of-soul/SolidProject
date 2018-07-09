@@ -1,0 +1,45 @@
+.about-results
+  display flex
+  flex-wrap wrap
+  padding 40px 20px
+  flex 1 1 auto
+  &__title
+    font-size 18px
+    font-family MetaPro
+    line-height 21px
+    margin-bottom 50px
+  &__item
+    flex 1 1 100%
+    text-align: center;
+    &:not(:last-child)
+      margin-bottom 65px
+  img
+    margin-bottom 50px
+  li
+    text-align left
+    max-width 260px
+    margin 0 auto
+    margin-bottom 6px
+    span
+      float right
+  i
+    width 12px
+    height 12px
+    display inline-block
+    vertical-align center
+    margin-right 10px
+  @media (min-width 768px) and (max-width 1199px)
+    padding 65px 50px
+    &__title
+      text-align left
+    &__item
+      display flex
+      flex-wrap wrap
+    &__title
+      flex 1 1 100%
+    ul
+      flex 1 0 auto
+  @media(min-width 1200px)
+    padding 65px 60px
+    &__item
+      flex 1 1 auto

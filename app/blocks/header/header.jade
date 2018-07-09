@@ -1,0 +1,24 @@
+header
+    div.header
+        .container
+            .header__icon
+                img.header__icon--static(src="/images/icons/logo.svg" alt="Solid Project")
+                .header__icon--scroll.hide
+                    img(src="/images/icons/logoScroll.svg" alt="Solid Project")
+                    p.header__title
+                        span.small
+                            | Облигации
+                        br
+                        | «Солид-Лизинг»
+
+            div.mobile
+                a.mobile__phone(href="tel:88043330988")
+                    | 8 (804) 333-09-88
+                p.mobile__describe
+                    | Звонок по России бесплатный
+
+            .header__btn-wrapper
+                a.btn.buy(href="#buy")
+                    | Купить
+            img.header__burger(src="/images/icons/burger.png" alt="Open menu")
+            img.header__burger.hide(src="/images/icons/close.png" alt="Close menu")

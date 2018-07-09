@@ -1,0 +1,99 @@
+.header
+  background-color white
+  padding-top: 10px
+  padding-bottom 10px
+  position fixed
+  width 100%
+  z-index 10
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  .container
+    display flex
+    flex-direction row
+    align-items center
+  &__icon
+    display block
+    width 74px
+    height 60px
+    cursor pointer
+    flex: 1;
+    img
+      max-height: 100%;
+      max-width: 100%;
+      min-height: 100%;
+  &__burger
+    display block
+    width 24px
+    height 21px
+    float right
+    cursor pointer
+  .mobile
+    display none
+  &__btn-wrapper
+    padding-right 20px
+    margin-right 20px
+    border-right 1px solid rgba(0, 0, 0, 0.15)
+  @media (min-width: 768px)
+    justify-content: space-between;
+    .container
+      padding-right: 20px;
+      padding-left: 20px;
+    &__icon
+      margin-right: 4.1%;
+      width: 123px;
+      height: 100px
+    &__burger
+      display none
+    .mobile
+      display block
+      margin-right: 7.3%;
+    .btn
+      width: 200px;
+      text-align: center;
+    &__btn-wrapper
+      padding-right 0
+      margin-right 0
+      border-right none
+
+
+.scroll
+  .header__icon--static
+    display none
+  .header__icon
+    height 59px
+  .header__icon--scroll
+    height 100%
+    align-items: center;
+    display flex!important
+    img
+      margin-right 50px
+  .header__title
+    display none
+  .mobile__phone
+    font-size 24px
+    line-height 26px
+
+@media (min-width: 1024px)
+  .scroll
+    .header__icon--static
+      display none
+    .header__icon
+      height 59px
+    .header__icon--scroll
+      height 100%
+      align-items: center;
+      display flex!important
+      img
+        margin-right 50px
+    .header__title
+      display block
+      font-family MetaPro
+      font-size 24px
+      line-height 28px
+      .small
+        font-family Roboto
+        color #8C8C8C
+        font-size 14px
+        line-height 16px
+    .mobile__phone
+      font-size 24px
+      line-height 26px

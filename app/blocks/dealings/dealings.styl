@@ -1,0 +1,44 @@
+.dealings
+	display block
+	background-color #F6F5F4
+	padding-top 40px
+	padding-bottom 40px
+	.tabs-info
+		height auto
+		overflow hidden
+	.tabs-info.hide
+		display block!important
+		height 0
+	@media (min-width: 1200px)
+		padding-top 100px
+		padding-bottom 100px
+	&__title
+		font-family MetaPro
+		font-size 24px
+		line-height 28px
+		margin-bottom 20px
+	&__date
+		font-size: 24px
+		line-height: 37px
+		font-family MetaPro
+		a
+			text-decoration none
+			color #222
+			display inline-block
+			vertical-align top
+			margin-right 30px
+			margin-bottom 30px
+			&.tabs--active
+				color: #660035
+	&__cards
+		width: 1200px;
+		display: flex;
+		flex-wrap: wrap;
+	&__cards-wrapper
+		max-width: 100vw;
+		overflow: auto;
+	@media (min-width: 768px)
+		&__title
+			font-size 36px
+			line-height 42px
+

@@ -1,0 +1,43 @@
+.footer
+	display block
+	padding-top: 40px;
+	padding-bottom 60px
+	@media (min-width: 768px)
+		padding-top: 100px;
+		padding-bottom 100px
+	@media (min-width: 1200px)
+		display flex
+		justify-content space-between
+		.mobile
+			flex 0 0 auto
+			order 2
+
+.mobile
+	text-align center
+	&__phone
+		font-size 30px
+		line-height 46px
+		color: #222
+		font-family MetaPro
+	&__describe
+		color: #888
+		font-size 14px
+		line-height 21px
+
+.copyright
+	margin-top 60px
+	color #8C8C8C
+	font-size 11px
+	line-height 17px
+	p:first-child
+		margin-bottom 12px
+	@media (min-width: 768px)
+		font-size 12px
+		line-height 18px
+		margin-top 88px
+
+	@media (min-width: 1200px)
+		flex 1 1 auto
+		order 1
+		margin-top 0
+		max-width 800px
